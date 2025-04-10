@@ -18,6 +18,7 @@ from io import BytesIO
 from typing import Dict, List, Any, Optional, Tuple, Union
 from PIL import Image
 from pathlib import Path
+import re
 
 # Configure logging
 logger = logging.getLogger("adaptive_ui_detection")
@@ -44,7 +45,7 @@ class MultiAPIVisionDetector:
             'api_preferences': ['gemini', 'huggingface', 'openai', 'groq'],
             'gemini': {
                 'api_key': os.environ.get('GEMINI_API_KEY', ''),
-                'model': 'gemini-pro-vision'
+                'model': 'gemini-1.5-flash'
             },
             'huggingface': {
                 'api_key': os.environ.get('HUGGINGFACE_API_KEY', ''),
@@ -139,23 +140,82 @@ class MultiAPIVisionDetector:
             pil_image = Image.fromarray(image)
             
             # Prepare prompt based on context
-            prompt = "Analyze this UI screenshot and identify all UI elements. "
-            prompt += "For each element, provide: element type (button, text_input, checkbox, etc.), "
-            prompt += "bounding box coordinates (x, y, width, height), and any text content. "
-            prompt += "Return the result as a JSON array of elements."
+            prompt = """
+            Analyze this screenshot and identify all UI elements present.
+            For each element, provide the following information:
+            1. Element type (button, text_input, checkbox, dropdown, radio_button, toggle, icon)
+            2. Bounding box coordinates (x, y, width, height) as percentages of the image dimensions
+            3. Text content (if any)
+            4. Function or purpose of the element (if obvious)
             
-            if context and 'description' in context:
-                prompt += f" Context: {context['description']}"
+            Format your response as a JSON array with one object per element, like this:
+            [
+              {
+                "type": "button",
+                "x": 0.1,
+                "y": 0.2,
+                "width": 0.15,
+                "height": 0.05,
+                "text": "Submit",
+                "purpose": "Submit form data"
+              },
+              ...
+            ]
+            
+            Only output the JSON array, nothing else. Be precise with coordinates.
+            """
+            
+            try:
+                # Create a content part for the image
+                image_bytes = cv2.imencode(".jpg", image)[1].tobytes()
+                image_part = {
+                    "mime_type": "image/jpeg",
+                    "data": base64.b64encode(image_bytes).decode('utf-8')
+                }
                 
-            # Generate content from the model
-            response = model.generate_content([prompt, pil_image])
-            response_text = response.text
-            
-            # Extract JSON data from response
-            elements = self._extract_json_from_response(response_text)
-            
-            # Process and normalize the elements
-            return self._normalize_elements(elements, 'gemini')
+                # Make the API call with the appropriate structure for Gemini 1.5
+                response = model.generate_content(
+                    contents=[prompt, image_part],
+                    generation_config={
+                        "temperature": 0.2,
+                        "max_output_tokens": 4096
+                    }
+                )
+                
+                # Extract JSON from the response
+                response_text = response.text
+                
+                # Try to extract JSON from the response
+                json_match = re.search(r'```json\s*([\s\S]*?)\s*```', response_text)
+                if json_match:
+                    json_text = json_match.group(1)
+                else:
+                    # If no code block, try to extract the JSON directly
+                    json_text = response_text.strip()
+                    
+                # Additional cleanup to handle potential Gemini 1.5 response format differences
+                json_text = re.sub(r'^[^[{]*', '', json_text)  # Remove any text before the start of JSON
+                json_text = re.sub(r'[^}\]]*$', '', json_text)  # Remove any text after the end of JSON
+                    
+                # Parse the JSON response
+                elements = json.loads(json_text)
+                
+                # Convert coordinates from percentages to pixels
+                image_height, image_width = image.shape[:2]
+                for element in elements:
+                    if all(k in element for k in ['x', 'y', 'width', 'height']):
+                        element['x'] = int(element['x'] * image_width)
+                        element['y'] = int(element['y'] * image_height)
+                        element['width'] = int(element['width'] * image_width)
+                        element['height'] = int(element['height'] * image_height)
+                        element['confidence'] = element.get('confidence', 0.8)  # Default confidence
+                        element['detector'] = 'gemini'
+                        
+                return elements
+                
+            except Exception as e:
+                logger.error(f"Error detecting with Gemini API: {e}")
+                return []
             
         except Exception as e:
             logger.error(f"Error detecting with Gemini API: {e}")
