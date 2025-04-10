@@ -1,0 +1,26 @@
+{
+  "dummy": {
+    "name": "dummy",
+    "total_calls": 10,
+    "successful_calls": 9,
+    "failed_calls": 1,
+    "success_rate": 0.9,
+    "total_elements_detected": 0,
+    "elements_per_call": 0.0,
+    "average_latency": 0.1,
+    "average_confidence": 0.9,
+    "last_update_time": 1744173559.8265572
+  },
+  "adaptive": {
+    "name": "adaptive",
+    "total_calls": 0,
+    "successful_calls": 0,
+    "failed_calls": 0,
+    "success_rate": 0.0,
+    "total_elements_detected": 0,
+    "elements_per_call": 0.0,
+    "average_latency": 0.0,
+    "average_confidence": 0.0,
+    "last_update_time": 1744173690.1395879
+  }
+}

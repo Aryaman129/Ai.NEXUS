@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "patterns": [],
+  "tasks": [
+    {
+      "description": "open apple music and play a song",
+      "plan": {
+        "application": "unknown",
+        "steps": []
+      },
+      "created": 1743833593.8912635
+    }
+  ],
+  "applications": {},
+  "created": 1743833139.5851114,
+  "learned_patterns": {},
+  "ui_elements": {},
+  "application_paths": {},
+  "successful_strategies": [],
+  "interaction_history": []
+}

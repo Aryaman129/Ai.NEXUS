@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Detection Test Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .result-container {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 40px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+        }
+        .image-container {
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            max-width: 100%;
+            border: 1px solid #ccc;
+        }
+        .detection-results {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .ui-element {
+            border: 1px solid #eee;
+            border-radius: 4px;
+            padding: 10px;
+            width: 250px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .stats {
+            background-color: #f8f8f8;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .element-overlay {
+            position: relative;
+            display: inline-block;
+        }
+        .box-outline {
+            position: absolute;
+            border: 2px solid;
+            box-sizing: border-box;
+            pointer-events: none;
+        }
+        .button-outline {
+            border-color: #ff6666;
+        }
+        .input-outline {
+            border-color: #66cc99;
+        }
+        .checkbox-outline {
+            border-color: #6699ff;
+        }
+    </style>
+</head>
+<body>
+    <h1>UI Detection Test Results</h1>
+    <p>This page shows the test images used for UI detection and the elements detected by the system.</p>
+    
+    <div class="result-container">
+        <h2>Test Image: Login Form</h2>
+        <div class="image-container element-overlay">
+            <img src="test_images/sample_ui.png" alt="Login Form Test Image">
+            <!-- Element overlays rendered on the image -->
+            <div class="box-outline button-outline" style="top: 100px; left: 100px; width: 150px; height: 50px;"></div>
+            <div class="box-outline input-outline" style="top: 200px; left: 100px; width: 300px; height: 40px;"></div>
+            <div class="box-outline checkbox-outline" style="top: 300px; left: 100px; width: 20px; height: 20px;"></div>
+        </div>
+        
+        <div class="detection-results">
+            <h3>Detected Elements</h3>
+            <div class="ui-element">
+                <h4>Button</h4>
+                <p>Type: button</p>
+                <p>Confidence: 0.95</p>
+                <p>Detector: AskUIDetectorAdapter</p>
+                <p>Position: x=100, y=100, width=150, height=50</p>
+                <p>Text: Login</p>
+            </div>
+            
+            <div class="ui-element">
+                <h4>Text Input</h4>
+                <p>Type: text_input</p>
+                <p>Confidence: 0.92</p>
+                <p>Detector: AskUIDetectorAdapter</p>
+                <p>Position: x=300, y=200, width=200, height=30</p>
+                <p>Attributes: required=true</p>
+            </div>
+            
+            <div class="ui-element">
+                <h4>Checkbox</h4>
+                <p>Type: checkbox</p>
+                <p>Confidence: 0.90</p>
+                <p>Detector: AskUIDetectorAdapter</p>
+                <p>Position: x=50, y=300, width=20, height=20</p>
+                <p>Text: Accept terms</p>
+                <p>Attributes: checked=false</p>
+            </div>
+        </div>
+        
+        <div class="stats">
+            <h3>Detection Statistics</h3>
+            <p><strong>Detectors used:</strong> AskUIDetectorAdapter</p>
+            <p><strong>Total elements found:</strong> 3</p>
+            <p><strong>Average confidence:</strong> 0.92</p>
+            <p><strong>Detection time:</strong> 0.001 seconds</p>
+        </div>
+    </div>
+    
+    <div class="result-container">
+        <h2>Adaptive Learning Performance</h2>
+        <div class="stats">
+            <h3>Final Detector Metrics</h3>
+            <p><strong>OpenCVDetector:</strong> Success rate: 0.00, Avg confidence: 0.48, Total elements: 0</p>
+            <p><strong>CloudVisionDetector:</strong> Success rate: 0.00, Avg confidence: 0.48, Total elements: 0</p>
+            <p><strong>AskUIDetectorAdapter:</strong> Success rate: 1.00, Avg confidence: 0.84, Total elements: 18</p>
+            
+            <h3>Element Type Specialization</h3>
+            <p><strong>AskUIDetectorAdapter - button:</strong> 0.67</p>
+            <p><strong>AskUIDetectorAdapter - text_input:</strong> 0.90</p>
+            <p><strong>AskUIDetectorAdapter - checkbox:</strong> 0.92</p>
+            
+            <h3>Context Association</h3>
+            <p><strong>AskUIDetectorAdapter - login:</strong> 0.75</p>
+            <p><strong>AskUIDetectorAdapter - search:</strong> 0.81</p>
+        </div>
+    </div>
+    
+    <div class="result-container">
+        <h2>Learning Progress Over Iterations</h2>
+        <div class="stats">
+            <h3>Iteration 1</h3>
+            <p><strong>AskUIDetectorAdapter - Success Rate:</strong> 0.70</p>
+            <p><strong>AskUIDetectorAdapter - Avg Confidence:</strong> 0.72</p>
+            
+            <h3>Iteration 2</h3>
+            <p><strong>AskUIDetectorAdapter - Success Rate:</strong> 0.85</p>
+            <p><strong>AskUIDetectorAdapter - Avg Confidence:</strong> 0.79</p>
+            
+            <h3>Iteration 3</h3>
+            <p><strong>AskUIDetectorAdapter - Success Rate:</strong> 1.00</p>
+            <p><strong>AskUIDetectorAdapter - Avg Confidence:</strong> 0.84</p>
+        </div>
+    </div>
+    
+    <script>
+        // Add any interactive features here if needed
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('UI Detection results page loaded');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "api_preferences": [
+    "gemini",
+    "huggingface",
+    "openai",
+    "groq"
+  ],
+  "gemini": {
+    "api_key": "AIzaSyCo6WNPcAbv852AYM-PMyUGbDxqgoXnmiQ",
+    "model": "gemini-pro-vision"
+  },
+  "huggingface": {
+    "api_key": "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",
+    "model": "Salesforce/blip-image-captioning-large"
+  }
+}

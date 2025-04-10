@@ -1,0 +1,14 @@
+2025-04-07 06:33:00,649 - NEXUS - INFO - Using default configuration
+2025-04-07 06:33:00,669 - NEXUS - INFO - Default configuration saved to nexus_config.json
+2025-04-07 06:33:07,071 - NEXUS - INFO - Launching NEXUS with UI and multi-app controller
+2025-04-07 06:33:07,072 - src.ai_core.automation.safety_manager - INFO - SafetyManager initialized with safety level: 2
+2025-04-07 06:33:07,072 - src.ai_core.automation.mouse_controller - INFO - MouseController initialized with screen size: 1920x1080
+2025-04-07 06:33:07,072 - src.ai_core.automation.keyboard_controller - INFO - KeyboardController initialized with typing speed: 8.0 chars/sec
+2025-04-07 06:33:07,073 - src.ai_core.screen_analysis.visual_memory - INFO - VisualMemorySystem initialized with 0 patterns
+2025-04-07 06:33:07,074 - src.nexus_ui.floating_assistant - INFO - Floating Assistant UI initialized
+2025-04-07 06:33:07,074 - src.nexus_ui.multi_app_controller - INFO - Multi-Application Controller initialized
+2025-04-07 06:33:07,599 - src.nexus_ui.floating_assistant - INFO - Floating Assistant UI started
+2025-04-07 06:33:08,104 - src.nexus_ui.multi_app_controller - INFO - Application monitoring started
+2025-04-07 06:33:08,129 - src.nexus_ui.multi_app_controller - INFO - Multi-Application Controller started
+2025-04-07 06:34:51,686 - src.nexus_ui.multi_app_controller - INFO - New application detected: WinUI Desktop
+2025-04-07 06:36:00,078 - src.nexus_ui.floating_assistant - ERROR - Error in close callback: cannot join current thread

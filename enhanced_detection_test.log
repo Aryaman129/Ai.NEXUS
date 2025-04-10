@@ -1,0 +1,225 @@
+2025-04-09 10:28:50,443 - enhanced_detection_test - INFO - Initialized EnhancedDetectorRegistry with memory path: memory/ml_ui_detection
+2025-04-09 10:28:50,444 - enhanced_detection_test - INFO - Initialized MultimodalDetectionCoordinator
+2025-04-09 10:28:50,461 - enhanced_detection_test - INFO - Loaded test image: sample_ui
+2025-04-09 10:28:50,461 - enhanced_detection_test - INFO - Running detection on test images...
+2025-04-09 10:28:50,462 - enhanced_detection_test - INFO - 
+Iteration 1 - Initial 
+
+2025-04-09 10:28:50,485 - enhanced_detection_test - INFO - Detected 5 elements in sample_ui in 0.02s
+2025-04-09 10:28:50,485 - enhanced_detection_test - INFO - Feedback: 0/5 correct (0.00), 3 missed
+2025-04-09 10:28:50,485 - enhanced_detection_test - INFO - Updated specialization for AutoGluonDetectorAdapter on link: 0.00
+2025-04-09 10:28:50,485 - enhanced_detection_test - INFO - Updated context association for AutoGluonDetectorAdapter with ui_navigation: 0.00
+2025-04-09 10:28:50,485 - enhanced_detection_test - INFO - Updated specialization for AdaptiveDetector on image: 0.00
+2025-04-09 10:28:50,485 - enhanced_detection_test - INFO - Updated specialization for AdaptiveDetector on checkbox: 0.00
+2025-04-09 10:28:50,485 - enhanced_detection_test - INFO - Updated context association for AdaptiveDetector with ui_navigation: 0.00
+2025-04-09 10:28:50,485 - enhanced_detection_test - INFO - Updated specialization for AskUIDetectorAdapter on checkbox: 0.00
+2025-04-09 10:28:50,485 - enhanced_detection_test - INFO - Updated specialization for AskUIDetectorAdapter on text_input: 0.00
+2025-04-09 10:28:50,485 - enhanced_detection_test - INFO - Updated context association for AskUIDetectorAdapter with ui_navigation: 0.00
+2025-04-09 10:28:50,485 - enhanced_detection_test - INFO - Feedback processed: 0/5 correct elements
+2025-04-09 10:28:50,488 - enhanced_detection_test - INFO - Saved visualization to detection_results\sample_ui_iter1.png
+2025-04-09 10:28:50,989 - enhanced_detection_test - INFO - 
+Detector Performance after iteration 1:
+2025-04-09 10:28:50,989 - enhanced_detection_test - INFO -   AdaptiveDetector:
+2025-04-09 10:28:50,989 - enhanced_detection_test - INFO -     Success Rate: 0.70
+2025-04-09 10:28:50,989 - enhanced_detection_test - INFO -     Avg Confidence: 0.65
+2025-04-09 10:28:50,989 - enhanced_detection_test - INFO -     Elements Detected: 10
+2025-04-09 10:28:50,990 - enhanced_detection_test - INFO -   HuggingFaceDetector:
+2025-04-09 10:28:50,990 - enhanced_detection_test - INFO -     Success Rate: 0.80
+2025-04-09 10:28:50,990 - enhanced_detection_test - INFO -     Avg Confidence: 0.70
+2025-04-09 10:28:50,990 - enhanced_detection_test - INFO -     Elements Detected: 15
+2025-04-09 10:28:50,990 - enhanced_detection_test - INFO -   AutoGluonDetectorAdapter:
+2025-04-09 10:28:50,990 - enhanced_detection_test - INFO -     Success Rate: 0.90
+2025-04-09 10:28:50,990 - enhanced_detection_test - INFO -     Avg Confidence: 0.75
+2025-04-09 10:28:50,990 - enhanced_detection_test - INFO -     Elements Detected: 20
+2025-04-09 10:28:50,990 - enhanced_detection_test - INFO -   AskUIDetectorAdapter:
+2025-04-09 10:28:50,990 - enhanced_detection_test - INFO -     Success Rate: 0.70
+2025-04-09 10:28:50,990 - enhanced_detection_test - INFO -     Avg Confidence: 0.80
+2025-04-09 10:28:50,990 - enhanced_detection_test - INFO -     Elements Detected: 25
+2025-04-09 10:28:50,990 - enhanced_detection_test - INFO - 
+--------------------------------------------------------------------------------
+
+2025-04-09 10:28:50,990 - enhanced_detection_test - INFO - 
+Iteration 2 - Adaptive Learning Pass 
+
+2025-04-09 10:28:50,991 - enhanced_detection_test - INFO - Detected 6 elements in sample_ui in 0.00s
+2025-04-09 10:28:50,991 - enhanced_detection_test - INFO - Feedback: 0/6 correct (0.00), 3 missed
+2025-04-09 10:28:50,991 - enhanced_detection_test - INFO - Updated specialization for AutoGluonDetectorAdapter on text_input: 0.00
+2025-04-09 10:28:50,991 - enhanced_detection_test - INFO - Updated specialization for AutoGluonDetectorAdapter on checkbox: 0.00
+2025-04-09 10:28:50,991 - enhanced_detection_test - INFO - Updated context association for AutoGluonDetectorAdapter with ui_navigation: 0.00
+2025-04-09 10:28:50,992 - enhanced_detection_test - INFO - Updated specialization for AdaptiveDetector on image: 0.00
+2025-04-09 10:28:50,992 - enhanced_detection_test - INFO - Updated specialization for AdaptiveDetector on button: 0.00
+2025-04-09 10:28:50,992 - enhanced_detection_test - INFO - Updated context association for AdaptiveDetector with ui_navigation: 0.00
+2025-04-09 10:28:50,992 - enhanced_detection_test - INFO - Updated specialization for HuggingFaceDetector on button: 0.00
+2025-04-09 10:28:50,992 - enhanced_detection_test - INFO - Updated context association for HuggingFaceDetector with ui_navigation: 0.00
+2025-04-09 10:28:50,992 - enhanced_detection_test - INFO - Feedback processed: 0/6 correct elements
+2025-04-09 10:28:50,997 - enhanced_detection_test - INFO - Saved visualization to detection_results\sample_ui_iter2.png
+2025-04-09 10:28:51,497 - enhanced_detection_test - INFO - 
+Detector Performance after iteration 2:
+2025-04-09 10:28:51,497 - enhanced_detection_test - INFO -   AdaptiveDetector:
+2025-04-09 10:28:51,497 - enhanced_detection_test - INFO -     Success Rate: 0.70
+2025-04-09 10:28:51,498 - enhanced_detection_test - INFO -     Avg Confidence: 0.65
+2025-04-09 10:28:51,498 - enhanced_detection_test - INFO -     Elements Detected: 10
+2025-04-09 10:28:51,498 - enhanced_detection_test - INFO -   HuggingFaceDetector:
+2025-04-09 10:28:51,498 - enhanced_detection_test - INFO -     Success Rate: 0.80
+2025-04-09 10:28:51,498 - enhanced_detection_test - INFO -     Avg Confidence: 0.70
+2025-04-09 10:28:51,498 - enhanced_detection_test - INFO -     Elements Detected: 15
+2025-04-09 10:28:51,498 - enhanced_detection_test - INFO -   AutoGluonDetectorAdapter:
+2025-04-09 10:28:51,499 - enhanced_detection_test - INFO -     Success Rate: 0.90
+2025-04-09 10:28:51,499 - enhanced_detection_test - INFO -     Avg Confidence: 0.75
+2025-04-09 10:28:51,499 - enhanced_detection_test - INFO -     Elements Detected: 20
+2025-04-09 10:28:51,499 - enhanced_detection_test - INFO -   AskUIDetectorAdapter:
+2025-04-09 10:28:51,499 - enhanced_detection_test - INFO -     Success Rate: 0.70
+2025-04-09 10:28:51,499 - enhanced_detection_test - INFO -     Avg Confidence: 0.80
+2025-04-09 10:28:51,499 - enhanced_detection_test - INFO -     Elements Detected: 25
+2025-04-09 10:28:51,499 - enhanced_detection_test - INFO - 
+--------------------------------------------------------------------------------
+
+2025-04-09 10:28:51,499 - enhanced_detection_test - INFO - 
+Iteration 3 - Adaptive Learning Pass 
+
+2025-04-09 10:28:51,500 - enhanced_detection_test - INFO - Detected 5 elements in sample_ui in 0.00s
+2025-04-09 10:28:51,500 - enhanced_detection_test - INFO - Feedback: 0/5 correct (0.00), 3 missed
+2025-04-09 10:28:51,500 - enhanced_detection_test - INFO - Updated specialization for AdaptiveDetector on image: 0.00
+2025-04-09 10:28:51,500 - enhanced_detection_test - INFO - Updated context association for AdaptiveDetector with ui_navigation: 0.00
+2025-04-09 10:28:51,500 - enhanced_detection_test - INFO - Updated specialization for HuggingFaceDetector on button: 0.00
+2025-04-09 10:28:51,500 - enhanced_detection_test - INFO - Updated specialization for HuggingFaceDetector on image: 0.00
+2025-04-09 10:28:51,500 - enhanced_detection_test - INFO - Updated specialization for HuggingFaceDetector on text_input: 0.00
+2025-04-09 10:28:51,500 - enhanced_detection_test - INFO - Updated context association for HuggingFaceDetector with ui_navigation: 0.00
+2025-04-09 10:28:51,500 - enhanced_detection_test - INFO - Updated specialization for AutoGluonDetectorAdapter on button: 0.00
+2025-04-09 10:28:51,500 - enhanced_detection_test - INFO - Updated context association for AutoGluonDetectorAdapter with ui_navigation: 0.00
+2025-04-09 10:28:51,500 - enhanced_detection_test - INFO - Feedback processed: 0/5 correct elements
+2025-04-09 10:28:51,506 - enhanced_detection_test - INFO - Saved visualization to detection_results\sample_ui_iter3.png
+2025-04-09 10:28:52,007 - enhanced_detection_test - INFO - 
+Detector Performance after iteration 3:
+2025-04-09 10:28:52,007 - enhanced_detection_test - INFO -   AdaptiveDetector:
+2025-04-09 10:28:52,007 - enhanced_detection_test - INFO -     Success Rate: 0.70
+2025-04-09 10:28:52,007 - enhanced_detection_test - INFO -     Avg Confidence: 0.65
+2025-04-09 10:28:52,007 - enhanced_detection_test - INFO -     Elements Detected: 10
+2025-04-09 10:28:52,007 - enhanced_detection_test - INFO -   HuggingFaceDetector:
+2025-04-09 10:28:52,007 - enhanced_detection_test - INFO -     Success Rate: 0.80
+2025-04-09 10:28:52,007 - enhanced_detection_test - INFO -     Avg Confidence: 0.70
+2025-04-09 10:28:52,007 - enhanced_detection_test - INFO -     Elements Detected: 15
+2025-04-09 10:28:52,007 - enhanced_detection_test - INFO -   AutoGluonDetectorAdapter:
+2025-04-09 10:28:52,007 - enhanced_detection_test - INFO -     Success Rate: 0.90
+2025-04-09 10:28:52,007 - enhanced_detection_test - INFO -     Avg Confidence: 0.75
+2025-04-09 10:28:52,007 - enhanced_detection_test - INFO -     Elements Detected: 20
+2025-04-09 10:28:52,007 - enhanced_detection_test - INFO -   AskUIDetectorAdapter:
+2025-04-09 10:28:52,007 - enhanced_detection_test - INFO -     Success Rate: 0.70
+2025-04-09 10:28:52,007 - enhanced_detection_test - INFO -     Avg Confidence: 0.80
+2025-04-09 10:28:52,007 - enhanced_detection_test - INFO -     Elements Detected: 25
+2025-04-09 10:28:52,007 - enhanced_detection_test - INFO - 
+--------------------------------------------------------------------------------
+
+2025-04-09 10:28:52,007 - enhanced_detection_test - INFO - Test completed successfully.
+2025-04-09 10:29:29,987 - enhanced_detection_test - INFO - Initialized EnhancedDetectorRegistry with memory path: memory/ml_ui_detection
+2025-04-09 10:29:29,987 - enhanced_detection_test - INFO - Initialized MultimodalDetectionCoordinator
+2025-04-09 10:29:29,990 - enhanced_detection_test - INFO - Loaded test image: sample_ui
+2025-04-09 10:29:29,990 - enhanced_detection_test - INFO - Running detection on test images...
+2025-04-09 10:29:29,990 - enhanced_detection_test - INFO - 
+Iteration 1 - Initial 
+
+2025-04-09 10:29:30,008 - enhanced_detection_test - INFO - Detected 4 elements in sample_ui in 0.02s
+2025-04-09 10:29:30,008 - enhanced_detection_test - INFO - Feedback: 0/4 correct (0.00), 3 missed
+2025-04-09 10:29:30,008 - enhanced_detection_test - INFO - Updated specialization for AdaptiveDetector on image: 0.00
+2025-04-09 10:29:30,009 - enhanced_detection_test - INFO - Updated specialization for AdaptiveDetector on link: 0.00
+2025-04-09 10:29:30,009 - enhanced_detection_test - INFO - Updated context association for AdaptiveDetector with ui_navigation: 0.00
+2025-04-09 10:29:30,009 - enhanced_detection_test - INFO - Updated specialization for AutoGluonDetectorAdapter on dropdown: 0.00
+2025-04-09 10:29:30,009 - enhanced_detection_test - INFO - Updated context association for AutoGluonDetectorAdapter with ui_navigation: 0.00
+2025-04-09 10:29:30,010 - enhanced_detection_test - INFO - Updated specialization for HuggingFaceDetector on text_input: 0.00
+2025-04-09 10:29:30,011 - enhanced_detection_test - INFO - Updated context association for HuggingFaceDetector with ui_navigation: 0.00
+2025-04-09 10:29:30,011 - enhanced_detection_test - INFO - Feedback processed: 0/4 correct elements
+2025-04-09 10:29:30,016 - enhanced_detection_test - INFO - Saved visualization to detection_results\sample_ui_iter1.png
+2025-04-09 10:29:30,516 - enhanced_detection_test - INFO - 
+Detector Performance after iteration 1:
+2025-04-09 10:29:30,517 - enhanced_detection_test - INFO -   AdaptiveDetector:
+2025-04-09 10:29:30,517 - enhanced_detection_test - INFO -     Success Rate: 0.70
+2025-04-09 10:29:30,518 - enhanced_detection_test - INFO -     Avg Confidence: 0.65
+2025-04-09 10:29:30,518 - enhanced_detection_test - INFO -     Elements Detected: 10
+2025-04-09 10:29:30,518 - enhanced_detection_test - INFO -   HuggingFaceDetector:
+2025-04-09 10:29:30,519 - enhanced_detection_test - INFO -     Success Rate: 0.80
+2025-04-09 10:29:30,519 - enhanced_detection_test - INFO -     Avg Confidence: 0.70
+2025-04-09 10:29:30,519 - enhanced_detection_test - INFO -     Elements Detected: 15
+2025-04-09 10:29:30,519 - enhanced_detection_test - INFO -   AutoGluonDetectorAdapter:
+2025-04-09 10:29:30,519 - enhanced_detection_test - INFO -     Success Rate: 0.90
+2025-04-09 10:29:30,520 - enhanced_detection_test - INFO -     Avg Confidence: 0.75
+2025-04-09 10:29:30,520 - enhanced_detection_test - INFO -     Elements Detected: 20
+2025-04-09 10:29:30,520 - enhanced_detection_test - INFO -   AskUIDetectorAdapter:
+2025-04-09 10:29:30,520 - enhanced_detection_test - INFO -     Success Rate: 0.70
+2025-04-09 10:29:30,520 - enhanced_detection_test - INFO -     Avg Confidence: 0.80
+2025-04-09 10:29:30,520 - enhanced_detection_test - INFO -     Elements Detected: 25
+2025-04-09 10:29:30,521 - enhanced_detection_test - INFO - 
+--------------------------------------------------------------------------------
+
+2025-04-09 10:29:30,521 - enhanced_detection_test - INFO - 
+Iteration 2 - Adaptive Learning Pass 
+
+2025-04-09 10:29:30,521 - enhanced_detection_test - INFO - Detected 3 elements in sample_ui in 0.00s
+2025-04-09 10:29:30,521 - enhanced_detection_test - INFO - Feedback: 0/3 correct (0.00), 3 missed
+2025-04-09 10:29:30,521 - enhanced_detection_test - INFO - Updated specialization for AskUIDetectorAdapter on link: 0.00
+2025-04-09 10:29:30,521 - enhanced_detection_test - INFO - Updated context association for AskUIDetectorAdapter with ui_navigation: 0.00
+2025-04-09 10:29:30,521 - enhanced_detection_test - INFO - Updated specialization for AdaptiveDetector on checkbox: 0.00
+2025-04-09 10:29:30,521 - enhanced_detection_test - INFO - Updated specialization for AdaptiveDetector on dropdown: 0.00
+2025-04-09 10:29:30,522 - enhanced_detection_test - INFO - Updated context association for AdaptiveDetector with ui_navigation: 0.00
+2025-04-09 10:29:30,522 - enhanced_detection_test - INFO - Feedback processed: 0/3 correct elements
+2025-04-09 10:29:30,525 - enhanced_detection_test - INFO - Saved visualization to detection_results\sample_ui_iter2.png
+2025-04-09 10:29:31,025 - enhanced_detection_test - INFO - 
+Detector Performance after iteration 2:
+2025-04-09 10:29:31,026 - enhanced_detection_test - INFO -   AdaptiveDetector:
+2025-04-09 10:29:31,026 - enhanced_detection_test - INFO -     Success Rate: 0.70
+2025-04-09 10:29:31,027 - enhanced_detection_test - INFO -     Avg Confidence: 0.65
+2025-04-09 10:29:31,027 - enhanced_detection_test - INFO -     Elements Detected: 10
+2025-04-09 10:29:31,027 - enhanced_detection_test - INFO -   HuggingFaceDetector:
+2025-04-09 10:29:31,027 - enhanced_detection_test - INFO -     Success Rate: 0.80
+2025-04-09 10:29:31,028 - enhanced_detection_test - INFO -     Avg Confidence: 0.70
+2025-04-09 10:29:31,028 - enhanced_detection_test - INFO -     Elements Detected: 15
+2025-04-09 10:29:31,028 - enhanced_detection_test - INFO -   AutoGluonDetectorAdapter:
+2025-04-09 10:29:31,028 - enhanced_detection_test - INFO -     Success Rate: 0.90
+2025-04-09 10:29:31,028 - enhanced_detection_test - INFO -     Avg Confidence: 0.75
+2025-04-09 10:29:31,028 - enhanced_detection_test - INFO -     Elements Detected: 20
+2025-04-09 10:29:31,029 - enhanced_detection_test - INFO -   AskUIDetectorAdapter:
+2025-04-09 10:29:31,029 - enhanced_detection_test - INFO -     Success Rate: 0.70
+2025-04-09 10:29:31,029 - enhanced_detection_test - INFO -     Avg Confidence: 0.80
+2025-04-09 10:29:31,029 - enhanced_detection_test - INFO -     Elements Detected: 25
+2025-04-09 10:29:31,029 - enhanced_detection_test - INFO - 
+--------------------------------------------------------------------------------
+
+2025-04-09 10:29:31,029 - enhanced_detection_test - INFO - 
+Iteration 3 - Adaptive Learning Pass 
+
+2025-04-09 10:29:31,030 - enhanced_detection_test - INFO - Detected 7 elements in sample_ui in 0.00s
+2025-04-09 10:29:31,030 - enhanced_detection_test - INFO - Feedback: 0/7 correct (0.00), 3 missed
+2025-04-09 10:29:31,030 - enhanced_detection_test - INFO - Updated specialization for AskUIDetectorAdapter on link: 0.00
+2025-04-09 10:29:31,030 - enhanced_detection_test - INFO - Updated context association for AskUIDetectorAdapter with ui_navigation: 0.00
+2025-04-09 10:29:31,030 - enhanced_detection_test - INFO - Updated specialization for HuggingFaceDetector on button: 0.00
+2025-04-09 10:29:31,030 - enhanced_detection_test - INFO - Updated context association for HuggingFaceDetector with ui_navigation: 0.00
+2025-04-09 10:29:31,031 - enhanced_detection_test - INFO - Updated specialization for AutoGluonDetectorAdapter on text_input: 0.00
+2025-04-09 10:29:31,031 - enhanced_detection_test - INFO - Updated specialization for AutoGluonDetectorAdapter on dropdown: 0.00
+2025-04-09 10:29:31,031 - enhanced_detection_test - INFO - Updated specialization for AutoGluonDetectorAdapter on image: 0.00
+2025-04-09 10:29:31,031 - enhanced_detection_test - INFO - Updated context association for AutoGluonDetectorAdapter with ui_navigation: 0.00
+2025-04-09 10:29:31,032 - enhanced_detection_test - INFO - Updated specialization for AdaptiveDetector on dropdown: 0.00
+2025-04-09 10:29:31,033 - enhanced_detection_test - INFO - Updated specialization for AdaptiveDetector on link: 0.00
+2025-04-09 10:29:31,033 - enhanced_detection_test - INFO - Updated context association for AdaptiveDetector with ui_navigation: 0.00
+2025-04-09 10:29:31,033 - enhanced_detection_test - INFO - Feedback processed: 0/7 correct elements
+2025-04-09 10:29:31,040 - enhanced_detection_test - INFO - Saved visualization to detection_results\sample_ui_iter3.png
+2025-04-09 10:29:31,541 - enhanced_detection_test - INFO - 
+Detector Performance after iteration 3:
+2025-04-09 10:29:31,542 - enhanced_detection_test - INFO -   AdaptiveDetector:
+2025-04-09 10:29:31,543 - enhanced_detection_test - INFO -     Success Rate: 0.70
+2025-04-09 10:29:31,543 - enhanced_detection_test - INFO -     Avg Confidence: 0.65
+2025-04-09 10:29:31,544 - enhanced_detection_test - INFO -     Elements Detected: 10
+2025-04-09 10:29:31,544 - enhanced_detection_test - INFO -   HuggingFaceDetector:
+2025-04-09 10:29:31,545 - enhanced_detection_test - INFO -     Success Rate: 0.80
+2025-04-09 10:29:31,545 - enhanced_detection_test - INFO -     Avg Confidence: 0.70
+2025-04-09 10:29:31,546 - enhanced_detection_test - INFO -     Elements Detected: 15
+2025-04-09 10:29:31,546 - enhanced_detection_test - INFO -   AutoGluonDetectorAdapter:
+2025-04-09 10:29:31,546 - enhanced_detection_test - INFO -     Success Rate: 0.90
+2025-04-09 10:29:31,547 - enhanced_detection_test - INFO -     Avg Confidence: 0.75
+2025-04-09 10:29:31,547 - enhanced_detection_test - INFO -     Elements Detected: 20
+2025-04-09 10:29:31,547 - enhanced_detection_test - INFO -   AskUIDetectorAdapter:
+2025-04-09 10:29:31,548 - enhanced_detection_test - INFO -     Success Rate: 0.70
+2025-04-09 10:29:31,548 - enhanced_detection_test - INFO -     Avg Confidence: 0.80
+2025-04-09 10:29:31,549 - enhanced_detection_test - INFO -     Elements Detected: 25
+2025-04-09 10:29:31,549 - enhanced_detection_test - INFO - 
+--------------------------------------------------------------------------------
+
+2025-04-09 10:29:31,549 - enhanced_detection_test - INFO - Test completed successfully.

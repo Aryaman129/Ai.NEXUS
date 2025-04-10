@@ -1,0 +1,77 @@
+{
+  "version": "1.0",
+  "last_updated": "2025-04-10T08:38:52.378772",
+  "templates": {
+    "39b8a76d-0862-4d59-9a7f-dd2f5f478294": {
+      "id": "39b8a76d-0862-4d59-9a7f-dd2f5f478294",
+      "element_type": "text_input",
+      "text": "Username",
+      "created": "2025-04-10T07:49:44.625637",
+      "last_updated": "2025-04-10T08:38:52.366624",
+      "occurrences": 4,
+      "source": "manual",
+      "contexts": [
+        "login"
+      ]
+    },
+    "d9c7aead-0a97-4779-b307-05194b0f1056": {
+      "id": "d9c7aead-0a97-4779-b307-05194b0f1056",
+      "element_type": "checkbox",
+      "text": "Remember me",
+      "created": "2025-04-10T07:49:44.680928",
+      "last_updated": "2025-04-10T08:38:52.368899",
+      "occurrences": 2,
+      "source": "manual",
+      "contexts": [
+        "login"
+      ]
+    },
+    "e5aaa11d-ae3d-4e69-a0ed-4d7a2a0a22e8": {
+      "id": "e5aaa11d-ae3d-4e69-a0ed-4d7a2a0a22e8",
+      "element_type": "button",
+      "text": "Login",
+      "created": "2025-04-10T07:49:44.683013",
+      "last_updated": "2025-04-10T08:38:52.378571",
+      "occurrences": 2,
+      "source": "manual",
+      "contexts": [
+        "login"
+      ]
+    }
+  },
+  "detection_stats": {
+    "39b8a76d-0862-4d59-9a7f-dd2f5f478294": {
+      "attempts": 0,
+      "successes": 0,
+      "failures": 0
+    },
+    "d9c7aead-0a97-4779-b307-05194b0f1056": {
+      "attempts": 0,
+      "successes": 0,
+      "failures": 0
+    },
+    "e5aaa11d-ae3d-4e69-a0ed-4d7a2a0a22e8": {
+      "attempts": 0,
+      "successes": 0,
+      "failures": 0
+    }
+  },
+  "quality_scores": {
+    "39b8a76d-0862-4d59-9a7f-dd2f5f478294": 1.0,
+    "d9c7aead-0a97-4779-b307-05194b0f1056": 1.0,
+    "e5aaa11d-ae3d-4e69-a0ed-4d7a2a0a22e8": 1.0
+  },
+  "element_types": [
+    "button",
+    "text_input",
+    "checkbox",
+    "radio",
+    "toggle",
+    "icon",
+    "dropdown",
+    "image",
+    "link",
+    "menu"
+  ],
+  "contexts": []
+}

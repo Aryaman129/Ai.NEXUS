@@ -1,0 +1,102 @@
+[
+  {
+    "pattern_id": "pattern_1743984617_0",
+    "action": "click",
+    "success": true,
+    "timestamp": 1743984619.851964,
+    "date": "2025-04-07T05:40:19.851967",
+    "context": {
+      "window_title": "Demo Window"
+    }
+  },
+  {
+    "pattern_id": "pattern_1743984617_0",
+    "action": "click",
+    "success": true,
+    "timestamp": 1743984621.4598682,
+    "date": "2025-04-07T05:40:21.459872",
+    "context": {
+      "window_title": "Demo Window"
+    }
+  },
+  {
+    "pattern_id": "pattern_1743984617_0",
+    "action": "click",
+    "success": true,
+    "timestamp": 1743984623.0680742,
+    "date": "2025-04-07T05:40:23.068078",
+    "context": {
+      "window_title": "Demo Window"
+    }
+  },
+  {
+    "pattern_id": "pattern_1743984617_0",
+    "action": "click",
+    "success": false,
+    "timestamp": 1743984623.5694113,
+    "date": "2025-04-07T05:40:23.569413",
+    "context": {
+      "window_title": "Demo Window"
+    }
+  },
+  {
+    "pattern_id": "pattern_1743984617_0",
+    "action": "click",
+    "success": false,
+    "timestamp": 1743984624.0703418,
+    "date": "2025-04-07T05:40:24.070345",
+    "context": {
+      "window_title": "Demo Window"
+    }
+  },
+  {
+    "pattern_id": "pattern_1743984617_0",
+    "action": "click",
+    "success": false,
+    "timestamp": 1743984624.5708983,
+    "date": "2025-04-07T05:40:24.570900",
+    "context": {
+      "window_title": "Demo Window"
+    }
+  },
+  {
+    "pattern_id": "pattern_1743984625_1",
+    "action": "click",
+    "success": true,
+    "timestamp": 1743984626.1796646,
+    "date": "2025-04-07T05:40:26.179669",
+    "context": {
+      "window_title": "Demo Window"
+    }
+  },
+  {
+    "pattern_id": "pattern_1743984625_1",
+    "action": "click",
+    "success": false,
+    "timestamp": 1743984626.6805913,
+    "date": "2025-04-07T05:40:26.680595",
+    "context": {
+      "window_title": "Demo Window"
+    }
+  },
+  {
+    "pattern_id": "pattern_1743984625_1",
+    "action": "click",
+    "success": false,
+    "timestamp": 1743984627.1814117,
+    "date": "2025-04-07T05:40:27.181414",
+    "context": {
+      "window_title": "Demo Window"
+    }
+  },
+  {
+    "pattern_id": "pattern_1743984627_2",
+    "action": "click",
+    "success": true,
+    "timestamp": 1743984628.7904286,
+    "date": "2025-04-07T05:40:28.790430",
+    "context": {
+      "window_title": "Demo Window"
+    }
+  }
+]

@@ -1,0 +1,90 @@
+Simple ML UI Detector Test - 2025-04-09 04:10:28
+
+--------------------------------------------------------------------------------
+
+TEST ENVIRONMENT SETUP
+
+--------------------------------------------------------------------------------
+Created test image at: D:\Ai\NEXUS\test_results\test_images\test_ui.png
+--------------------------------------------------------------------------------
+
+TESTING ENHANCEDDETECTORREGISTRY
+
+--------------------------------------------------------------------------------
+Successfully imported EnhancedDetectorRegistry
+Registry initialized
+ERROR in detector registry test: 'EnhancedDetectorRegistry' object has no attribute 'get_all_detectors'
+Traceback (most recent call last):
+  File "D:\Ai\NEXUS\simple_ml_detector_test.py", line 303, in test_detector_registry
+    detectors = registry.get_all_detectors()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EnhancedDetectorRegistry' object has no attribute 'get_all_detectors'. Did you mean: 'get_best_detector'?
+
+Registry test failed
+--------------------------------------------------------------------------------
+
+TESTING ADAPTIVEDETECTOR
+
+--------------------------------------------------------------------------------
+Successfully imported AdaptiveDetector
+ERROR in adaptive detector test: Can't instantiate abstract class AdaptiveDetector without an implementation for abstract method 'supports_incremental_learning'
+Traceback (most recent call last):
+  File "D:\Ai\NEXUS\simple_ml_detector_test.py", line 114, in test_adaptive_detector
+    detector = AdaptiveDetector()
+TypeError: Can't instantiate abstract class AdaptiveDetector without an implementation for abstract method 'supports_incremental_learning'
+
+Adaptive detector test failed
+--------------------------------------------------------------------------------
+
+TESTING HUGGINGFACEDETECTOR
+
+--------------------------------------------------------------------------------
+Successfully imported HuggingFaceDetector
+ERROR in HuggingFace detector test: Can't instantiate abstract class HuggingFaceDetector without an implementation for abstract method 'supports_incremental_learning'
+Traceback (most recent call last):
+  File "D:\Ai\NEXUS\simple_ml_detector_test.py", line 204, in test_huggingface_detector
+    detector = HuggingFaceDetector()
+TypeError: Can't instantiate abstract class HuggingFaceDetector without an implementation for abstract method 'supports_incremental_learning'
+
+HuggingFace detector test failed
+--------------------------------------------------------------------------------
+
+TESTING MULTIMODALDETECTIONCOORDINATOR
+
+--------------------------------------------------------------------------------
+Successfully imported MultimodalDetectionCoordinator
+Coordinator initialized
+VLM initialization success: False
+ERROR in multimodal coordinator test: 'EnhancedDetectorRegistry' object has no attribute 'get_all_detectors'
+Traceback (most recent call last):
+  File "D:\Ai\NEXUS\simple_ml_detector_test.py", line 386, in test_multimodal_coordinator
+    result = coordinator.detect(request)
+  File "D:\Ai\NEXUS\src\ai_core\screen_analysis\ml_ui_detection\multimodal_detection_coordinator.py", line 145, in detect
+    detectors = self._get_detectors(request.priority_detectors)
+  File "D:\Ai\NEXUS\src\ai_core\screen_analysis\ml_ui_detection\multimodal_detection_coordinator.py", line 238, in _get_detectors
+    all_detectors = self.registry.get_all_detectors() if self.registry else {}
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EnhancedDetectorRegistry' object has no attribute 'get_all_detectors'. Did you mean: 'get_best_detector'?
+
+Multimodal coordinator test failed
+--------------------------------------------------------------------------------
+
+TEST RESULTS ANALYSIS
+
+--------------------------------------------------------------------------------
+
+TEST SUMMARY:
+Total errors: 4
+Total warnings: 0
+Components tested: 0
+Total UI elements detected: 0
+ISSUE: Vision-language model initialization failed
+
+OVERALL STATUS: FAILED - Critical errors detected
+--------------------------------------------------------------------------------
+
+TEST COMPLETE
+
+--------------------------------------------------------------------------------
+Test results saved to: D:\Ai\NEXUS\test_results\ui_detector_test_20250409_041028.txt
+Visualizations saved to: D:\Ai\NEXUS\test_results\visualizations

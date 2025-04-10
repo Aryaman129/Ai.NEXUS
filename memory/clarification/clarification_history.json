@@ -1,0 +1,60 @@
+[
+  {
+    "id": "clarification_1743984584_0",
+    "timestamp": 1743984584.1102211,
+    "scenario": "ui_element_action",
+    "context": {
+      "element_type": "button",
+      "element_text": "Submit",
+      "action": "click"
+    },
+    "question": "I see a button labeled 'Submit'. Should I click it?",
+    "response": "yes",
+    "initial_confidence": 0.5,
+    "updated_confidence": 0.8,
+    "proceed": true
+  },
+  {
+    "id": "clarification_1743984591_1",
+    "timestamp": 1743984591.3140388,
+    "scenario": "ui_element_action",
+    "context": {
+      "element_type": "button",
+      "element_text": "Submit",
+      "action": "click"
+    },
+    "question": "There's a button that appears to say 'Submit'. Do you want me to click it?",
+    "response": "yes",
+    "initial_confidence": 0.8,
+    "updated_confidence": 1.0,
+    "proceed": true
+  },
+  {
+    "id": "clarification_1743984598_2",
+    "timestamp": 1743984598.37185,
+    "scenario": "ui_element_action",
+    "context": {
+      "element_type": "link",
+      "element_text": "Privacy Policy",
+      "action": "click"
+    },
+    "question": "I've detected a link with text 'Privacy Policy'. Would you like me to click it?",
+    "response": "no",
+    "initial_confidence": 1.0,
+    "updated_confidence": 0.9,
+    "proceed": false
+  },
+  {
+    "id": "clarification_1743984607_3",
+    "timestamp": 1743984607.073217,
+    "scenario": "dangerous_action",
+    "context": {
+      "action": "delete file"
+    },
+    "question": "The action delete file seems potentially risky. Should I proceed anyway?",
+    "response": "no",
+    "initial_confidence": 0.9,
+    "updated_confidence": 0.8,
+    "proceed": false
+  }
+]

@@ -1,0 +1,90 @@
+Simple ML UI Detector Test - 2025-04-09 09:58:55
+
+--------------------------------------------------------------------------------
+
+TEST ENVIRONMENT SETUP
+
+--------------------------------------------------------------------------------
+Created test image at: D:\Ai\NEXUS\test_results\test_images\test_ui.png
+--------------------------------------------------------------------------------
+
+TESTING ENHANCEDDETECTORREGISTRY
+
+--------------------------------------------------------------------------------
+Successfully imported EnhancedDetectorRegistry
+Registry initialized
+Number of registered detectors: 0
+Number of registered detectors after registration: 0
+Best detector: 
+Detector selected for button context: 
+Updated metrics for dummy detector: {'name': 'dummy', 'total_calls': 10, 'successful_calls': 9, 'failed_calls': 1, 'success_rate': 0.9, 'total_elements_detected': 0, 'elements_per_call': 0.0, 'average_latency': 0.1, 'average_confidence': 0.9, 'last_update_time': 1744172947.2387705}
+Registry test succeeded
+--------------------------------------------------------------------------------
+
+TESTING ADAPTIVEDETECTOR
+
+--------------------------------------------------------------------------------
+Successfully imported AdaptiveDetector
+Initialization success: True
+Detector capabilities: {'name': 'adaptive_detector', 'version': '1.0.0', 'supports_ocr': True, 'supports_semantic': False, 'detection_strategies': ['edge', 'color', 'feature'], 'element_types': ['button', 'text_field', 'checkbox', 'dropdown', 'radio_button', 'toggle', 'slider', 'icon', 'menu', 'toolbar', 'dialog']}
+ERROR in adaptive detector test: boolean index did not match indexed array along axis 0; size of axis is 600 but size of corresponding boolean axis is 480000
+Traceback (most recent call last):
+  File "D:\Ai\NEXUS\simple_ml_detector_test.py", line 124, in test_adaptive_detector
+    elements = detector.detect_elements(test_image)
+  File "D:\Ai\NEXUS\src\ai_core\screen_analysis\ml_ui_detection\adaptive_detector.py", line 161, in detect_elements
+    color_elements = self._detect_with_color(screenshot)
+  File "D:\Ai\NEXUS\src\ai_core\screen_analysis\ml_ui_detection\adaptive_detector.py", line 266, in _detect_with_color
+    mask[labels.flatten() == i] = 255
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: boolean index did not match indexed array along axis 0; size of axis is 600 but size of corresponding boolean axis is 480000
+
+Adaptive detector test failed
+--------------------------------------------------------------------------------
+
+TESTING HUGGINGFACEDETECTOR
+
+--------------------------------------------------------------------------------
+Successfully imported HuggingFaceDetector
+HuggingFace available: True
+Initialization success: False
+Failed to initialize HuggingFace detector, skipping tests
+HuggingFace detector test failed
+--------------------------------------------------------------------------------
+
+TESTING MULTIMODALDETECTIONCOORDINATOR
+
+--------------------------------------------------------------------------------
+Successfully imported MultimodalDetectionCoordinator
+Coordinator initialized
+VLM initialization success: False
+Detection with empty registry - Elements: 0
+Errors: ['No UI element detectors available']
+Registered adaptive detector
+Detection with adaptive detector - Elements: 0
+Performance statistics: {}
+Detection with confidence threshold 0.5 - Elements: 0
+Detection with semantic analysis - Elements: 0
+Elements with semantic descriptions: 0
+Multimodal coordinator test succeeded
+--------------------------------------------------------------------------------
+
+TEST RESULTS ANALYSIS
+
+--------------------------------------------------------------------------------
+
+TEST SUMMARY:
+Total errors: 1
+Total warnings: 0
+Components tested: 0
+Total UI elements detected: 0
+ISSUE: Vision-language model initialization failed
+ISSUE: HuggingFace detector not available or failed to initialize
+
+OVERALL STATUS: FAILED - Critical errors detected
+--------------------------------------------------------------------------------
+
+TEST COMPLETE
+
+--------------------------------------------------------------------------------
+Test results saved to: D:\Ai\NEXUS\test_results\ui_detector_test_20250409_095855.txt
+Visualizations saved to: D:\Ai\NEXUS\test_results\visualizations

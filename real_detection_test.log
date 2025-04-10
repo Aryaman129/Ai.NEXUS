@@ -1,0 +1,106 @@
+2025-04-09 10:43:47,517 - real_detection_test - INFO - Loaded 0 templates for UI detection
+2025-04-09 10:43:47,517 - real_detection_test - WARNING - Cloud Vision Detector not initialized - API key missing
+2025-04-09 10:43:47,517 - real_detection_test - INFO - Registered detector: OpenCVDetector
+2025-04-09 10:43:47,517 - real_detection_test - INFO - Registered detector: CloudVisionDetector
+2025-04-09 10:43:47,517 - real_detection_test - INFO - Registered detector: AskUIDetectorAdapter
+2025-04-09 10:43:47,517 - real_detection_test - INFO - Registered 3 built-in detectors
+2025-04-09 10:43:47,520 - real_detection_test - INFO - Loaded test image: sample_ui.png - (600, 800, 3)
+2025-04-09 10:43:47,520 - real_detection_test - INFO - Using best general detector: OpenCVDetector
+2025-04-09 10:43:47,521 - real_detection_test - WARNING - No templates available for detection
+2025-04-09 10:43:47,521 - real_detection_test - INFO - Trying additional detector: CloudVisionDetector
+2025-04-09 10:43:47,521 - real_detection_test - WARNING - Cloud Vision Detector skipped - not initialized
+2025-04-09 10:43:47,521 - real_detection_test - INFO - Trying additional detector: AskUIDetectorAdapter
+2025-04-09 10:43:47,521 - real_detection_test - INFO - AskUI detector found 3 elements
+2025-04-09 10:43:47,531 - real_detection_test - INFO - Updated context association for detector AskUIDetectorAdapter with context login: 0.67
+2025-04-09 10:43:47,531 - real_detection_test - INFO - Updated specialization for detector AskUIDetectorAdapter on element type button: 0.00
+2025-04-09 10:43:47,531 - real_detection_test - INFO - Updated specialization for detector AskUIDetectorAdapter on element type text_input: 1.00
+2025-04-09 10:43:47,531 - real_detection_test - INFO - Updated specialization for detector AskUIDetectorAdapter on element type checkbox: 1.00
+2025-04-09 10:43:47,531 - real_detection_test - INFO - Processed feedback #1 - detectors updated: ['AskUIDetectorAdapter']
+2025-04-09 10:43:47,531 - real_detection_test - INFO - Using specialized detector AskUIDetectorAdapter for text_input
+2025-04-09 10:43:47,531 - real_detection_test - INFO - AskUI detector found 3 elements
+2025-04-09 10:43:47,532 - real_detection_test - INFO - Updated context association for detector AskUIDetectorAdapter with context search: 0.67
+2025-04-09 10:43:47,532 - real_detection_test - INFO - Updated specialization for detector AskUIDetectorAdapter on element type button: 0.20
+2025-04-09 10:43:47,532 - real_detection_test - INFO - Updated specialization for detector AskUIDetectorAdapter on element type text_input: 1.00
+2025-04-09 10:43:47,532 - real_detection_test - INFO - Updated specialization for detector AskUIDetectorAdapter on element type checkbox: 0.80
+2025-04-09 10:43:47,532 - real_detection_test - INFO - Processed feedback #2 - detectors updated: ['AskUIDetectorAdapter']
+2025-04-09 10:43:47,532 - real_detection_test - INFO - Using best general detector: AskUIDetectorAdapter
+2025-04-09 10:43:47,532 - real_detection_test - INFO - AskUI detector found 3 elements
+2025-04-09 10:43:47,532 - real_detection_test - INFO - Updated context association for detector AskUIDetectorAdapter with context login: 0.67
+2025-04-09 10:43:47,532 - real_detection_test - INFO - Updated specialization for detector AskUIDetectorAdapter on element type button: 0.36
+2025-04-09 10:43:47,532 - real_detection_test - INFO - Updated specialization for detector AskUIDetectorAdapter on element type text_input: 0.80
+2025-04-09 10:43:47,532 - real_detection_test - INFO - Updated specialization for detector AskUIDetectorAdapter on element type checkbox: 0.84
+2025-04-09 10:43:47,532 - real_detection_test - INFO - Processed feedback #3 - detectors updated: ['AskUIDetectorAdapter']
+2025-04-09 10:43:47,532 - real_detection_test - INFO - Using specialized detector AskUIDetectorAdapter for text_input
+2025-04-09 10:43:47,533 - real_detection_test - INFO - AskUI detector found 3 elements
+2025-04-09 10:43:47,533 - real_detection_test - INFO - Updated context association for detector AskUIDetectorAdapter with context search: 0.75
+2025-04-09 10:43:47,533 - real_detection_test - INFO - Updated specialization for detector AskUIDetectorAdapter on element type button: 0.49
+2025-04-09 10:43:47,533 - real_detection_test - INFO - Updated specialization for detector AskUIDetectorAdapter on element type text_input: 0.84
+2025-04-09 10:43:47,533 - real_detection_test - INFO - Updated specialization for detector AskUIDetectorAdapter on element type checkbox: 0.87
+2025-04-09 10:43:47,533 - real_detection_test - INFO - Processed feedback #4 - detectors updated: ['AskUIDetectorAdapter']
+2025-04-09 10:43:47,533 - real_detection_test - INFO - Using best general detector: AskUIDetectorAdapter
+2025-04-09 10:43:47,533 - real_detection_test - INFO - AskUI detector found 3 elements
+2025-04-09 10:43:47,533 - real_detection_test - INFO - Updated context association for detector AskUIDetectorAdapter with context login: 0.75
+2025-04-09 10:43:47,533 - real_detection_test - INFO - Updated specialization for detector AskUIDetectorAdapter on element type button: 0.59
+2025-04-09 10:43:47,533 - real_detection_test - INFO - Updated specialization for detector AskUIDetectorAdapter on element type text_input: 0.87
+2025-04-09 10:43:47,533 - real_detection_test - INFO - Updated specialization for detector AskUIDetectorAdapter on element type checkbox: 0.90
+2025-04-09 10:43:47,533 - real_detection_test - INFO - Processed feedback #5 - detectors updated: ['AskUIDetectorAdapter']
+2025-04-09 10:43:47,533 - real_detection_test - INFO - Using specialized detector AskUIDetectorAdapter for text_input
+2025-04-09 10:43:47,533 - real_detection_test - INFO - AskUI detector found 3 elements
+2025-04-09 10:43:47,533 - real_detection_test - INFO - Updated context association for detector AskUIDetectorAdapter with context search: 0.81
+2025-04-09 10:43:47,533 - real_detection_test - INFO - Updated specialization for detector AskUIDetectorAdapter on element type button: 0.67
+2025-04-09 10:43:47,533 - real_detection_test - INFO - Updated specialization for detector AskUIDetectorAdapter on element type text_input: 0.90
+2025-04-09 10:43:47,533 - real_detection_test - INFO - Updated specialization for detector AskUIDetectorAdapter on element type checkbox: 0.92
+2025-04-09 10:43:47,534 - real_detection_test - INFO - Processed feedback #6 - detectors updated: ['AskUIDetectorAdapter']
+2025-04-09 10:44:42,570 - real_detection_test - INFO - Loaded 0 templates for UI detection
+2025-04-09 10:44:42,571 - real_detection_test - WARNING - Cloud Vision Detector not initialized - API key missing
+2025-04-09 10:44:42,571 - real_detection_test - INFO - Registered detector: OpenCVDetector
+2025-04-09 10:44:42,571 - real_detection_test - INFO - Registered detector: CloudVisionDetector
+2025-04-09 10:44:42,572 - real_detection_test - INFO - Registered detector: AskUIDetectorAdapter
+2025-04-09 10:44:42,572 - real_detection_test - INFO - Registered 3 built-in detectors
+2025-04-09 10:44:42,575 - real_detection_test - INFO - Loaded test image: sample_ui.png - (600, 800, 3)
+2025-04-09 10:44:42,578 - real_detection_test - INFO - Using best general detector: OpenCVDetector
+2025-04-09 10:44:42,578 - real_detection_test - WARNING - No templates available for detection
+2025-04-09 10:44:42,579 - real_detection_test - INFO - Trying additional detector: CloudVisionDetector
+2025-04-09 10:44:42,579 - real_detection_test - WARNING - Cloud Vision Detector skipped - not initialized
+2025-04-09 10:44:42,579 - real_detection_test - INFO - Trying additional detector: AskUIDetectorAdapter
+2025-04-09 10:44:42,579 - real_detection_test - INFO - AskUI detector found 3 elements
+2025-04-09 10:44:42,594 - real_detection_test - INFO - Updated context association for detector AskUIDetectorAdapter with context login: 1.00
+2025-04-09 10:44:42,595 - real_detection_test - INFO - Updated specialization for detector AskUIDetectorAdapter on element type button: 1.00
+2025-04-09 10:44:42,595 - real_detection_test - INFO - Updated specialization for detector AskUIDetectorAdapter on element type text_input: 1.00
+2025-04-09 10:44:42,596 - real_detection_test - INFO - Updated specialization for detector AskUIDetectorAdapter on element type checkbox: 1.00
+2025-04-09 10:44:42,596 - real_detection_test - INFO - Processed feedback #1 - detectors updated: ['AskUIDetectorAdapter']
+2025-04-09 10:44:42,597 - real_detection_test - INFO - Using specialized detector AskUIDetectorAdapter for text_input
+2025-04-09 10:44:42,597 - real_detection_test - INFO - AskUI detector found 3 elements
+2025-04-09 10:44:42,598 - real_detection_test - INFO - Updated context association for detector AskUIDetectorAdapter with context search: 0.67
+2025-04-09 10:44:42,598 - real_detection_test - INFO - Updated specialization for detector AskUIDetectorAdapter on element type button: 1.00
+2025-04-09 10:44:42,598 - real_detection_test - INFO - Updated specialization for detector AskUIDetectorAdapter on element type text_input: 0.80
+2025-04-09 10:44:42,599 - real_detection_test - INFO - Updated specialization for detector AskUIDetectorAdapter on element type checkbox: 1.00
+2025-04-09 10:44:42,599 - real_detection_test - INFO - Processed feedback #2 - detectors updated: ['AskUIDetectorAdapter']
+2025-04-09 10:44:42,600 - real_detection_test - INFO - Using best general detector: AskUIDetectorAdapter
+2025-04-09 10:44:42,600 - real_detection_test - INFO - AskUI detector found 3 elements
+2025-04-09 10:44:42,602 - real_detection_test - INFO - Updated context association for detector AskUIDetectorAdapter with context login: 0.92
+2025-04-09 10:44:42,602 - real_detection_test - INFO - Updated specialization for detector AskUIDetectorAdapter on element type button: 0.80
+2025-04-09 10:44:42,602 - real_detection_test - INFO - Updated specialization for detector AskUIDetectorAdapter on element type text_input: 0.84
+2025-04-09 10:44:42,602 - real_detection_test - INFO - Updated specialization for detector AskUIDetectorAdapter on element type checkbox: 1.00
+2025-04-09 10:44:42,603 - real_detection_test - INFO - Processed feedback #3 - detectors updated: ['AskUIDetectorAdapter']
+2025-04-09 10:44:42,603 - real_detection_test - INFO - Using specialized detector AskUIDetectorAdapter for text_input
+2025-04-09 10:44:42,603 - real_detection_test - INFO - AskUI detector found 3 elements
+2025-04-09 10:44:42,604 - real_detection_test - INFO - Updated context association for detector AskUIDetectorAdapter with context search: 0.67
+2025-04-09 10:44:42,604 - real_detection_test - INFO - Updated specialization for detector AskUIDetectorAdapter on element type button: 0.64
+2025-04-09 10:44:42,604 - real_detection_test - INFO - Updated specialization for detector AskUIDetectorAdapter on element type text_input: 0.87
+2025-04-09 10:44:42,604 - real_detection_test - INFO - Updated specialization for detector AskUIDetectorAdapter on element type checkbox: 1.00
+2025-04-09 10:44:42,604 - real_detection_test - INFO - Processed feedback #4 - detectors updated: ['AskUIDetectorAdapter']
+2025-04-09 10:44:42,605 - real_detection_test - INFO - Using best general detector: AskUIDetectorAdapter
+2025-04-09 10:44:42,606 - real_detection_test - INFO - AskUI detector found 3 elements
+2025-04-09 10:44:42,606 - real_detection_test - INFO - Updated context association for detector AskUIDetectorAdapter with context login: 0.77
+2025-04-09 10:44:42,607 - real_detection_test - INFO - Updated specialization for detector AskUIDetectorAdapter on element type button: 0.51
+2025-04-09 10:44:42,608 - real_detection_test - INFO - Updated specialization for detector AskUIDetectorAdapter on element type text_input: 0.90
+2025-04-09 10:44:42,608 - real_detection_test - INFO - Updated specialization for detector AskUIDetectorAdapter on element type checkbox: 0.80
+2025-04-09 10:44:42,609 - real_detection_test - INFO - Processed feedback #5 - detectors updated: ['AskUIDetectorAdapter']
+2025-04-09 10:44:42,610 - real_detection_test - INFO - Using specialized detector AskUIDetectorAdapter for text_input
+2025-04-09 10:44:42,610 - real_detection_test - INFO - AskUI detector found 3 elements
+2025-04-09 10:44:42,611 - real_detection_test - INFO - Updated context association for detector AskUIDetectorAdapter with context search: 0.75
+2025-04-09 10:44:42,611 - real_detection_test - INFO - Updated specialization for detector AskUIDetectorAdapter on element type button: 0.61
+2025-04-09 10:44:42,612 - real_detection_test - INFO - Updated specialization for detector AskUIDetectorAdapter on element type text_input: 0.92
+2025-04-09 10:44:42,612 - real_detection_test - INFO - Updated specialization for detector AskUIDetectorAdapter on element type checkbox: 0.84
+2025-04-09 10:44:42,612 - real_detection_test - INFO - Processed feedback #6 - detectors updated: ['AskUIDetectorAdapter']

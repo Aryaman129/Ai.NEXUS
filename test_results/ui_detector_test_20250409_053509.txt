@@ -1,0 +1,60 @@
+Simple ML UI Detector Test - 2025-04-09 05:35:09
+
+--------------------------------------------------------------------------------
+
+TEST ENVIRONMENT SETUP
+
+--------------------------------------------------------------------------------
+Created test image at: D:\Ai\NEXUS\test_results\test_images\test_ui.png
+--------------------------------------------------------------------------------
+
+TESTING ENHANCEDDETECTORREGISTRY
+
+--------------------------------------------------------------------------------
+Successfully imported EnhancedDetectorRegistry
+Registry initialized
+Number of registered detectors: 0
+ERROR in detector registry test: Can't instantiate abstract class DummyDetector without an implementation for abstract method 'supports_incremental_learning'
+Traceback (most recent call last):
+  File "D:\Ai\NEXUS\simple_ml_detector_test.py", line 323, in test_detector_registry
+    dummy_detector = DummyDetector()
+TypeError: Can't instantiate abstract class DummyDetector without an implementation for abstract method 'supports_incremental_learning'
+
+Registry test failed
+--------------------------------------------------------------------------------
+
+TESTING ADAPTIVEDETECTOR
+
+--------------------------------------------------------------------------------
+Successfully imported AdaptiveDetector
+Initialization success: True
+Detector capabilities: {'name': 'adaptive_detector', 'version': '1.0.0', 'supports_ocr': True, 'supports_semantic': False, 'detection_strategies': ['edge', 'color', 'feature'], 'element_types': ['button', 'text_field', 'checkbox', 'dropdown', 'radio_button', 'toggle', 'slider', 'icon', 'menu', 'toolbar', 'dialog']}
+ERROR in adaptive detector test: boolean index did not match indexed array along axis 0; size of axis is 600 but size of corresponding boolean axis is 480000
+Traceback (most recent call last):
+  File "D:\Ai\NEXUS\simple_ml_detector_test.py", line 124, in test_adaptive_detector
+    elements = detector.detect_elements(test_image)
+  File "D:\Ai\NEXUS\src\ai_core\screen_analysis\ml_ui_detection\adaptive_detector.py", line 161, in detect_elements
+    color_elements = self._detect_with_color(screenshot)
+  File "D:\Ai\NEXUS\src\ai_core\screen_analysis\ml_ui_detection\adaptive_detector.py", line 266, in _detect_with_color
+    mask[labels.flatten() == i] = 255
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: boolean index did not match indexed array along axis 0; size of axis is 600 but size of corresponding boolean axis is 480000
+
+Adaptive detector test failed
+--------------------------------------------------------------------------------
+
+TESTING HUGGINGFACEDETECTOR
+
+--------------------------------------------------------------------------------
+Successfully imported HuggingFaceDetector
+HuggingFace available: True
+Initialization success: False
+Failed to initialize HuggingFace detector, skipping tests
+HuggingFace detector test failed
+--------------------------------------------------------------------------------
+
+TESTING MULTIMODALDETECTIONCOORDINATOR
+
+--------------------------------------------------------------------------------
+Successfully imported MultimodalDetectionCoordinator
+Coordinator initialized

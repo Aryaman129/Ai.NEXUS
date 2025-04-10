@@ -1,0 +1,69 @@
+1
+def _calibrate_confidence(self, raw_confidence, element_type):
+    """Calibrate raw confidence scores based on historical accuracy"""
+    if element_type not in self.confidence_calibration:
+        return raw_confidence
+        
+    calibration = self.confidence_calibration[element_type]
+    
+    # Apply calibration formula
+    # This is a simple linear adjustment; more sophisticated methods could be used
+    adjusted = (raw_confidence * calibration["scale"]) + calibration["offset"]
+    
+    # Ensure confidence stays in [0,1] range
+    return max(0.0, min(1.0, adjusted))
+-
+-
+2
+async def detect_elements_batch(self, screenshots, contexts=None):
+    """Process multiple screenshots in batch for efficiency"""
+    if not self.current_detector or not hasattr(self.current_detector, "detect_elements_batch"):
+        # Fall back to sequential processing
+        results = []
+        for i, screenshot in enumerate():
+            context = contexts[i] if contexts and i < len(contexts) else None
+            results.append(await self.detect_elements(screenshot, context))
+        return results
+        
+    # Use batch processing if available
+    try:
+        return await self.current_detector.detect_elements_batch(screenshots, contexts)
+    except Exception as e:
+        logger.error(f"Error in batch detection: {e}")
+        # Fall back to sequential processing
+        # ...
+-
+-
+3
+def _record_version_performance(self, detector_name, version, metrics):
+    """Record performance metrics for a specific detector version"""
+    if detector_name not in self.detector_versions:
+        return
+        
+    # Find the version entry
+    for version_entry in self.detector_versions[detector_name]:
+        if version_entry["version"] == version:
+            # Update performance metrics
+            if "performance" not in version_entry:
+                version_entry["performance"] = {
+                    "calls": 0,
+                    "successes": 0,
+                    "average_confidence": 0.0
+                }
+                
+            perf = version_entry["performance"]
+            perf["calls"] += 1
+            if metrics.get("success", False):
+                perf["successes"] += 1
+            
+            # Update average confidence
+            if "confidence" in metrics:
+                old_avg = perf["average_confidence"]
+                old_weight = perf["calls"] - 1
+                new_value = metrics["confidence"]
+                
+                perf["average_confidence"] = (old_avg * old_weight + new_value) / perf["calls"]
+                
+            break
+-
+-

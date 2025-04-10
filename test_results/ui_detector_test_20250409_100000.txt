@@ -1,0 +1,169 @@
+Simple ML UI Detector Test - 2025-04-09 10:00:00
+
+--------------------------------------------------------------------------------
+
+TEST ENVIRONMENT SETUP
+
+--------------------------------------------------------------------------------
+Created test image at: D:\Ai\NEXUS\test_results\test_images\test_ui.png
+--------------------------------------------------------------------------------
+
+TESTING ENHANCEDDETECTORREGISTRY
+
+--------------------------------------------------------------------------------
+Successfully imported EnhancedDetectorRegistry
+Registry initialized
+Number of registered detectors: 0
+Number of registered detectors after registration: 0
+Best detector: 
+Detector selected for button context: 
+Updated metrics for dummy detector: {'name': 'dummy', 'total_calls': 10, 'successful_calls': 9, 'failed_calls': 1, 'success_rate': 0.9, 'total_elements_detected': 0, 'elements_per_call': 0.0, 'average_latency': 0.1, 'average_confidence': 0.9, 'last_update_time': 1744173008.664343}
+Registry test succeeded
+--------------------------------------------------------------------------------
+
+TESTING ADAPTIVEDETECTOR
+
+--------------------------------------------------------------------------------
+Successfully imported AdaptiveDetector
+Initialization success: True
+Detector capabilities: {'name': 'adaptive_detector', 'version': '1.0.0', 'supports_ocr': True, 'supports_semantic': False, 'detection_strategies': ['edge', 'color', 'feature'], 'element_types': ['button', 'text_field', 'checkbox', 'dropdown', 'radio_button', 'toggle', 'slider', 'icon', 'menu', 'toolbar', 'dialog']}
+Detection time: 6.906 seconds
+Detected 17 elements
+
+Detected elements:
+Element 1:
+  Type: toolbar
+  Confidence: 1.00
+  Bounding box: (51, 201, 400, 250)
+  Detection method: color
+Element 2:
+  Type: radio_button
+  Confidence: 1.00
+  Bounding box: (180, 350, 201, 381)
+  Detection method: color
+Element 3:
+  Type: checkbox
+  Confidence: 1.00
+  Bounding box: (51, 301, 70, 320)
+  Detection method: color
+Element 4:
+  Type: checkbox
+  Confidence: 0.96
+  Bounding box: (47, 297, 74, 324)
+  Detection method: edge
+Element 5:
+  Type: button
+  Confidence: 0.90
+  Bounding box: (np.int64(65), np.int64(113), np.int64(200), np.int64(150))
+  Detection method: feature
+Element 6:
+  Type: button
+  Confidence: 0.90
+  Bounding box: (np.int64(267), np.int64(115), np.int64(400), np.int64(150))
+  Detection method: feature
+Element 7:
+  Type: button
+  Confidence: 0.90
+  Bounding box: (np.int64(62), np.int64(351), np.int64(141), np.int64(380))
+  Detection method: feature
+Element 8:
+  Type: button
+  Confidence: 0.90
+  Bounding box: (np.int64(55), np.int64(304), np.int64(125), np.int64(319))
+  Detection method: feature
+Element 9:
+  Type: button
+  Confidence: 0.90
+  Bounding box: (np.int64(158), np.int64(308), np.int64(217), np.int64(320))
+  Detection method: feature
+Element 10:
+  Type: text_field
+  Confidence: 0.80
+  Bounding box: (247, 97, 403, 153)
+  Detection method: edge
+Element 11:
+  Type: text_field
+  Confidence: 0.80
+  Bounding box: (47, 97, 203, 153)
+  Detection method: edge
+Element 12:
+  Type: button
+  Confidence: 0.77
+  Bounding box: (51, 351, 180, 380)
+  Detection method: color
+Element 13:
+  Type: text_field
+  Confidence: 0.75
+  Bounding box: (47, 347, 203, 384)
+  Detection method: edge
+Element 14:
+  Type: button
+  Confidence: 0.67
+  Bounding box: (79, 302, 143, 322)
+  Detection method: edge
+Element 15:
+  Type: button
+  Confidence: 0.63
+  Bounding box: (149, 302, 219, 322)
+  Detection method: edge
+Element 16:
+  Type: button
+  Confidence: 0.58
+  Bounding box: (348, 123, 371, 137)
+  Detection method: color
+Element 17:
+  Type: button
+  Confidence: 0.52
+  Bounding box: (83, 360, 122, 373)
+  Detection method: color
+Visualization saved to: D:\Ai\NEXUS\test_results\visualizations\adaptive_detector_results.png
+Adaptive detector test succeeded
+--------------------------------------------------------------------------------
+
+TESTING HUGGINGFACEDETECTOR
+
+--------------------------------------------------------------------------------
+Successfully imported HuggingFaceDetector
+HuggingFace available: True
+Initialization success: False
+Failed to initialize HuggingFace detector, skipping tests
+HuggingFace detector test failed
+--------------------------------------------------------------------------------
+
+TESTING MULTIMODALDETECTIONCOORDINATOR
+
+--------------------------------------------------------------------------------
+Successfully imported MultimodalDetectionCoordinator
+Coordinator initialized
+VLM initialization success: False
+Detection with empty registry - Elements: 0
+Errors: ['No UI element detectors available']
+Registered adaptive detector
+Detection with adaptive detector - Elements: 0
+Performance statistics: {}
+Detection with confidence threshold 0.5 - Elements: 0
+Detection with semantic analysis - Elements: 0
+Elements with semantic descriptions: 0
+Multimodal coordinator test succeeded
+--------------------------------------------------------------------------------
+
+TEST RESULTS ANALYSIS
+
+--------------------------------------------------------------------------------
+
+TEST SUMMARY:
+Total errors: 0
+Total warnings: 0
+Components tested: 0
+Total UI elements detected: 17
+ISSUE: Vision-language model initialization failed
+ISSUE: HuggingFace detector not available or failed to initialize
+
+OVERALL STATUS: SUCCESS - All tests passed
+--------------------------------------------------------------------------------
+
+TEST COMPLETE
+
+--------------------------------------------------------------------------------
+Test results saved to: D:\Ai\NEXUS\test_results\ui_detector_test_20250409_100000.txt
+Visualizations saved to: D:\Ai\NEXUS\test_results\visualizations

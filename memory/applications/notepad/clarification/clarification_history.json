@@ -1,0 +1,89 @@
+[
+  {
+    "id": "clarification_1743986293_0",
+    "timestamp": 1743986293.9142063,
+    "scenario": "general_uncertainty",
+    "context": {
+      "action": "open Windows Notepad",
+      "application": "notepad.exe"
+    },
+    "question": "I'm uncertain about what to do next. Should I open Windows Notepad?",
+    "response": "yes",
+    "initial_confidence": 0.5,
+    "updated_confidence": 0.8,
+    "proceed": true
+  },
+  {
+    "id": "clarification_1743986350_1",
+    "timestamp": 1743986350.9654443,
+    "scenario": "text_input",
+    "context": {
+      "element_type": "text editor",
+      "action": "type text",
+      "text": "This is a demonstration of NEX..."
+    },
+    "question": "There's a text editor field. What text would you like me to enter?",
+    "response": "a hello world code in C",
+    "initial_confidence": 0.5,
+    "updated_confidence": 0.55,
+    "proceed": true
+  },
+  {
+    "id": "clarification_1743986423_2",
+    "timestamp": 1743986423.0963867,
+    "scenario": "ui_element_action",
+    "context": {
+      "element_type": "menu",
+      "element_text": "Format > Word Wrap",
+      "action": "select"
+    },
+    "question": "I've detected a menu with text 'Format > Word Wrap'. Would you like me to select it?",
+    "response": "yes",
+    "initial_confidence": 0.5,
+    "updated_confidence": 0.8,
+    "proceed": true
+  },
+  {
+    "id": "clarification_1743986440_3",
+    "timestamp": 1743986440.7152178,
+    "scenario": "general_uncertainty",
+    "context": {
+      "action": "save file",
+      "filename": "nexus_demo.txt"
+    },
+    "question": "I'm uncertain about what to do next. Should I save file?",
+    "response": "yes",
+    "initial_confidence": 0.5,
+    "updated_confidence": 0.8,
+    "proceed": true
+  },
+  {
+    "id": "clarification_1743986446_4",
+    "timestamp": 1743986446.5930314,
+    "scenario": "dangerous_action",
+    "context": {
+      "action": "close Notepad",
+      "warning": "Unsaved changes might be lost"
+    },
+    "question": "I'm about to close Notepad, which could have significant effects. Are you sure?",
+    "response": "nexus_demo.txt",
+    "initial_confidence": 0.5,
+    "updated_confidence": 0.55,
+    "proceed": true
+  },
+  {
+    "id": "clarification_1743986545_5",
+    "timestamp": 1743986545.159425,
+    "scenario": "ui_element_action",
+    "context": {
+      "element_type": "menu",
+      "element_text": "Format > Font",
+      "action": "select"
+    },
+    "question": "I've detected a menu with text 'Format > Font'. Would you like me to select it?",
+    "response": "yes",
+    "initial_confidence": 0.5,
+    "updated_confidence": 0.8,
+    "proceed": true
+  }
+]

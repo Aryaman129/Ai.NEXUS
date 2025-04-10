@@ -1,0 +1,62 @@
+{
+  "specialized_element_type_42481973": {
+    "id": "specialized_element_type_42481973",
+    "base_detector": "BasicOpenCVDetector",
+    "specialization_type": "element_type",
+    "element_type": "button",
+    "context": null,
+    "created": "2025-04-10T07:49:45.661072",
+    "version": "1.0",
+    "performance": {
+      "calls": 0,
+      "successes": 0,
+      "total_confidence": 0.0
+    },
+    "name": "ButtonSpecializedBasicOpenCVDetector"
+  },
+  "specialized_context_38403ba1": {
+    "id": "specialized_context_38403ba1",
+    "base_detector": "BasicOpenCVDetector",
+    "specialization_type": "context",
+    "element_type": null,
+    "context": "login",
+    "created": "2025-04-10T07:49:45.685575",
+    "version": "1.0",
+    "performance": {
+      "calls": 0,
+      "successes": 0,
+      "total_confidence": 0.0
+    },
+    "name": "LoginSpecializedBasicOpenCVDetector"
+  },
+  "specialized_element_type_8fcf5c8c": {
+    "id": "specialized_element_type_8fcf5c8c",
+    "base_detector": "BasicOpenCVDetector",
+    "specialization_type": "element_type",
+    "element_type": "button",
+    "context": null,
+    "created": "2025-04-10T08:38:52.998197",
+    "version": "1.0",
+    "performance": {
+      "calls": 0,
+      "successes": 0,
+      "total_confidence": 0.0
+    },
+    "name": "ButtonSpecializedBasicOpenCVDetector"
+  },
+  "specialized_context_031eae99": {
+    "id": "specialized_context_031eae99",
+    "base_detector": "BasicOpenCVDetector",
+    "specialization_type": "context",
+    "element_type": null,
+    "context": "login",
+    "created": "2025-04-10T08:38:52.999218",
+    "version": "1.0",
+    "performance": {
+      "calls": 0,
+      "successes": 0,
+      "total_confidence": 0.0
+    },
+    "name": "LoginSpecializedBasicOpenCVDetector"
+  }
+}

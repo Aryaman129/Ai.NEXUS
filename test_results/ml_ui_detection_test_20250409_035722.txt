@@ -1,0 +1,74 @@
+ML UI Detection Test Results - 2025-04-09 03:57:22
+
+--------------------------------------------------------------------------------
+
+SETTING UP TEST ENVIRONMENT
+
+--------------------------------------------------------------------------------
+Test output: D:\Ai\NEXUS\test_results\ml_ui_detection_test_20250409_035722.txt
+Number of test images: 1
+Test images:
+  - D:\Ai\NEXUS\test_data\ui_screenshots\windows_screenshot.png
+--------------------------------------------------------------------------------
+
+TESTING ENHANCED DETECTOR REGISTRY
+
+--------------------------------------------------------------------------------
+ERROR in detector registry test: 'EnhancedDetectorRegistry' object has no attribute 'get_all_detectors'
+Traceback (most recent call last):
+  File "D:\Ai\NEXUS\test_ml_ui_detection.py", line 231, in test_detector_registry
+    detectors = registry.get_all_detectors()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EnhancedDetectorRegistry' object has no attribute 'get_all_detectors'. Did you mean: 'get_best_detector'?
+
+--------------------------------------------------------------------------------
+
+TESTING INDIVIDUAL DETECTORS WITH IMAGE: WINDOWS_SCREENSHOT.PNG
+
+--------------------------------------------------------------------------------
+Image loaded with shape: (1080, 1920, 3)
+ERROR in individual detector test: 'EnhancedDetectorRegistry' object has no attribute 'get_all_detectors'
+Traceback (most recent call last):
+  File "D:\Ai\NEXUS\test_ml_ui_detection.py", line 282, in test_individual_detectors
+    detectors = registry.get_all_detectors()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EnhancedDetectorRegistry' object has no attribute 'get_all_detectors'. Did you mean: 'get_best_detector'?
+
+--------------------------------------------------------------------------------
+
+TESTING MULTIMODAL DETECTION COORDINATOR WITH IMAGE: WINDOWS_SCREENSHOT.PNG
+
+--------------------------------------------------------------------------------
+Testing detection with default settings
+ERROR in multimodal coordinator test: 'EnhancedDetectorRegistry' object has no attribute 'get_all_detectors'
+Traceback (most recent call last):
+  File "D:\Ai\NEXUS\test_ml_ui_detection.py", line 352, in test_multimodal_coordinator
+    result = coordinator.detect(request)
+  File "D:\Ai\NEXUS\src\ai_core\screen_analysis\ml_ui_detection\multimodal_detection_coordinator.py", line 145, in detect
+    detectors = self._get_detectors(request.priority_detectors)
+  File "D:\Ai\NEXUS\src\ai_core\screen_analysis\ml_ui_detection\multimodal_detection_coordinator.py", line 238, in _get_detectors
+    all_detectors = self.registry.get_all_detectors() if self.registry else {}
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EnhancedDetectorRegistry' object has no attribute 'get_all_detectors'. Did you mean: 'get_best_detector'?
+
+--------------------------------------------------------------------------------
+
+TEST RESULTS ANALYSIS
+
+--------------------------------------------------------------------------------
+
+TEST SUMMARY:
+Total errors: 3
+Total warnings: 0
+Successful test sections: 0
+Detectors tested: 0
+Total UI elements detected: 0
+
+OVERALL STATUS: FAILED - Critical errors detected
+--------------------------------------------------------------------------------
+
+TEST COMPLETE
+
+--------------------------------------------------------------------------------
+Test results saved to: D:\Ai\NEXUS\test_results\ml_ui_detection_test_20250409_035722.txt
+Visualizations saved to: D:\Ai\NEXUS\test_results\visualizations
